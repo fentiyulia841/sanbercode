@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AuthController extends Controller
+class IniController extends Controller
 {
     public function index()
     {
         return view('register');
     }
 
-    public function store(Request $request)
+    public function variabel(Request $request)
     {
         $namaDepan = $request->firstname;
         $namaBelakang = $request->lastname;

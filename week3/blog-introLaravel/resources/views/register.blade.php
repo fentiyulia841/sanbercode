@@ -11,7 +11,7 @@
 <body>
     <h1>Buat Account Baru!</h1>
     <h3>Sign Up Form</h3>
-    <form action="{{ route('register.store') }}" method="POST">
+    <form action="{{ route('register.variabel') }}" method="POST">
         @csrf
         <label>First Name:</label><br /><br />
         <input type="text" name="firstname" /><br /><br />
@@ -27,15 +27,15 @@
         <label>Nationality:</label><br /><br />
         <select name="Nationality" id="nationality">
             <option value="indonesian">Indonesian</option>
-            <option value="singapore">Singapore</option>
-            <option value="malaysian">Malaysian</option>
-            <option value="australian">Australian</option>
+            <option value="singaporian">Singaporian</option>
+            <option value="arabian">arabian</option>
+            <option value="thailand">thailand</option>
         </select>
         <br /><br />
         <label>Language Spoken:</label><br /><br />
         <input type="checkbox" />Bahasa Indonesia<br />
         <input type="checkbox" />English<br />
-        <input type="checkbox" />Other<br /><br />
+        <input type="checkbox" />Lainnya<br /><br />
 
         <label>Bio:</label><br /><br />
         <textarea name="bio" id="bio" cols="30" rows="10"></textarea><br /><br />

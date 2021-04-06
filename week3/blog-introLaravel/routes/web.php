@@ -16,6 +16,6 @@
 // });
 
 Route::get('/', 'HomeController@index');
-Route::get('/register', 'AuthController@index')->name('register');
-Route::post('/register', 'AuthController@store')->name('register.store');
-Route::get('/welcome', 'AuthController@welcome')->name('welcome');
+Route::get('/register', 'IniController@index')->name('register');
+Route::post('/register', 'IniController@variabel')->name('register.variabel');
+Route::get('/welcome', 'IniController@welcome')->name('welcome');
